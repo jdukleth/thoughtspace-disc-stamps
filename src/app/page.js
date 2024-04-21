@@ -9,21 +9,19 @@ const HomePage = () => {
       <h1>Thoughtspace Disc Stamps</h1>
 
       {/* Distance Drivers */}
-      <Accordion.Root type="multiple" collapsible>
+      <Accordion.Root type="multiple" collapsible="true">
         <Accordion.Item value="distanceDrivers">
           <Accordion.Header>
             <Accordion.Trigger className="AccordionTrigger">Distance Drivers</Accordion.Trigger>
           </Accordion.Header>
           <Accordion.Content>
-            <h2>Distance Drivers</h2>
-
             {/* Distance Drivers Molds */}
-            <Accordion.Root type="multiple" collapsible>
+            <Accordion.Root type="multiple" collapsible="true">
               {molds.distanceDrivers.map((mold) => (
                 <Accordion.Item value={mold.mold} key={mold.mold}>
                   <Accordion.Header>
                     <Accordion.Trigger className="AccordionTrigger">
-                      {mold.mold} [{mold.speed} | {mold.glide} | {mold.turn} | {mold.fade}] {mold.comingSoon && 'Coming Soon'}
+                      {mold.mold} {mold.speed} | {mold.glide} | {mold.turn} | {mold.fade} {mold.comingSoon && 'Coming Soon'}
                     </Accordion.Trigger>
                   </Accordion.Header>
                   <Accordion.Content>…</Accordion.Content>
@@ -39,15 +37,13 @@ const HomePage = () => {
             <Accordion.Trigger className="AccordionTrigger">Fairway Drivers</Accordion.Trigger>
           </Accordion.Header>
           <Accordion.Content>
-            <h2>Fairway Drivers</h2>
-
             {/* Fairway Drivers Molds */}
-            <Accordion.Root type="multiple" collapsible>
+            <Accordion.Root type="multiple" collapsible="true">
               {molds.fairwayDrivers.map((mold) => (
                 <Accordion.Item value={mold.mold} key={mold.mold}>
                   <Accordion.Header>
                     <Accordion.Trigger className="AccordionTrigger">
-                      {mold.mold} [{mold.speed} | {mold.glide} | {mold.turn} | {mold.fade}] {mold.comingSoon && 'Coming Soon'}
+                      {mold.mold} {mold.speed} | {mold.glide} | {mold.turn} | {mold.fade} {mold.comingSoon && 'Coming Soon'}
                     </Accordion.Trigger>
                   </Accordion.Header>
                   <Accordion.Content>…</Accordion.Content>
@@ -63,15 +59,13 @@ const HomePage = () => {
             <Accordion.Trigger className="AccordionTrigger">Midranges</Accordion.Trigger>
           </Accordion.Header>
           <Accordion.Content>
-            <h2>Midranges</h2>
-
             {/* Midranges Molds */}
-            <Accordion.Root type="multiple" collapsible>
+            <Accordion.Root type="multiple" collapsible="true">
               {molds.midranges.map((mold) => (
                 <Accordion.Item value={mold.mold} key={mold.mold}>
                   <Accordion.Header>
                     <Accordion.Trigger className="AccordionTrigger">
-                      {mold.mold} [{mold.speed} | {mold.glide} | {mold.turn} | {mold.fade}] {mold.comingSoon && 'Coming Soon'}
+                      {mold.mold} {mold.speed} | {mold.glide} | {mold.turn} | {mold.fade} {mold.comingSoon && 'Coming Soon'}
                     </Accordion.Trigger>
                   </Accordion.Header>
                   <Accordion.Content>…</Accordion.Content>
@@ -87,15 +81,13 @@ const HomePage = () => {
             <Accordion.Trigger className="AccordionTrigger">Putters</Accordion.Trigger>
           </Accordion.Header>
           <Accordion.Content>
-            <h2>Putters</h2>
-
             {/* Putters Molds */}
-            <Accordion.Root type="multiple" collapsible>
+            <Accordion.Root type="multiple" collapsible="true">
               {molds.putters.map((mold) => (
                 <Accordion.Item value={mold.mold} key={mold.mold}>
                   <Accordion.Header>
                     <Accordion.Trigger className="AccordionTrigger">
-                      {mold.mold} [{mold.speed} | {mold.glide} | {mold.turn} | {mold.fade}] {mold.comingSoon && 'Coming Soon'} {mold.beaded ? 'Beaded' : 'Beadless'}
+                      {mold.mold} {mold.speed} | {mold.glide} | {mold.turn} | {mold.fade} {mold.comingSoon && 'Coming Soon'} {mold.bead ? 'Beaded' : 'Beadless'}
                     </Accordion.Trigger>
                   </Accordion.Header>
                   <Accordion.Content>…</Accordion.Content>
